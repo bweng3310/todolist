@@ -31,6 +31,8 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
  position: relative;
+ background-color: #F5F5DC;
+ font-family: monospace;
 }
 ol, ul {
 	list-style: none;
@@ -190,6 +192,7 @@ font-family: monospace;
 border-radius: 3px;
 font-size: 15px;
 height: 30px;
+padding-bottom: 30px;
 }
 
 .title{
@@ -263,6 +266,11 @@ height: 30px;
 }
 .weathertitle{
 font-size: 30px;
+}
+.footer{
+  text-align: center;
+  margin-top: 40px ;
+  margin-bottom: 20px;
 }
 
 
