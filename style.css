@@ -1,0 +1,339 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+ position: relative;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.background{
+ display: flex;
+text-align: center;
+justify-content: space-evenly;
+font-family: monospace;
+background-color: #F5F5DC;
+}
+
+input[type=checkbox]:checked ~ label{
+  text-decoration:line-through;
+  color:gray;
+  
+}
+.inputframe{
+  position: relative;
+  
+
+  justify-content: center;
+  align-items: center;
+}
+.editinput{
+ 
+  height: 30px;
+  border-radius: 3px;
+  border: none;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.input{
+  font-size: 15px;
+  margin:15x;
+  height: 30px;
+  border: none;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.butterfly{
+  height:100px;
+  width:100px;
+display: flex;
+margin: auto;
+padding-top: 30px;
+}
+
+.all{
+background-color: white;
+width: 400px;
+height: 300px;
+border-radius: 10px;
+display: inline-block;
+position: relative;
+}
+.row{
+display: flex;
+margin: 10px;
+}
+.delete{
+  color: black;
+  background-color:  #D3D3D3;
+  border: none;
+  border-radius: 3px;
+  font-family: monospace;
+  opacity: 0;
+  font-size: 15px;
+}
+.box{
+  position: relative;
+}
+.edit{
+  color: black;
+  background-color:  #D3D3D3;
+  border: none;
+  font-size: 15px;
+  border-radius: 3px;
+  font-family: monospace;
+  opacity: 0;
+  margin-right: 5px;
+  position: absolute;
+  right: 5px;
+}
+.row:hover .edit{
+  opacity: 1;
+}
+.row:hover .delete{
+  opacity: 1;
+}
+
+.options{
+  margin-top: 20px ;
+}
+.active{
+color: black;
+background-color:#D3D3D3;
+width: 100px;
+height: 30px;
+border: none;
+font-family: monospace;
+border-radius: 3px;
+margin-top: 15px;
+margin-left: 7px;
+margin-right: 7px;
+font-size: 15px;
+}
+.finished{
+color: black;
+width: 100px;
+height: 30px;
+background-color: #D3D3D3;
+border: none;
+font-family: monospace;
+border-radius: 3px;
+margin-top: 15px;
+margin-left: 7px;
+margin-right: 7px;
+font-size: 15px;
+}
+.unfinished{
+color: black;
+width: 100px;
+height: 30px;
+background-color: #D3D3D3;
+border: none;
+font-family: monospace;
+border-radius: 3px;
+margin-top: 15px;
+margin-left: 7px;
+margin-right: 7px;
+font-size: 15px;
+}
+
+.clear{
+text-align: center;
+margin-top: 15px;
+color: black;
+background-color: #D3D3D3;
+border: none;
+font-family: monospace;
+border-radius: 3px;
+font-size: 15px;
+height: 30px;
+}
+
+.title{
+  font-size: 30px;
+  margin: 10px;
+}
+
+
+.inner{
+  margin: 10px;
+  height: 230px;
+ overflow-y: scroll;
+ text-align: left;
+}
+
+
+.add-button{
+  color: black;
+  background-color: #D3D3D3;
+  border: none;
+  font-family: monospace;
+  border-radius: 3px;
+  font-size: 15px;
+  width: 50px;
+  height: 30px;
+
+}
+.editbutton{
+  color: black;
+  background-color: #D3D3D3;
+  border: none;
+  font-family: monospace;
+  border-radius: 3px;
+  width: 50px;
+  height: 30px;
+}
+.hide{
+  display: none;
+}
+.mark{
+  color: black;
+}
+.label{
+  width: 200px;
+  font-size: 15px;
+}
+.weather{
+width: 380px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .rainbow{
+  width: 180px;
+  
+} */
+.location{
+  width: 90px;
+  font-size: 15px;
+  /* color: gray; */
+  margin: 20px;
+}
+.wx{
+  font-size: 15px;
+  /* color: gray; */
+}
+.weathertitle{
+font-size: 30px;
+}
+
+
+
+
+
+
+
+
+.slider{
+  width: 250px;
+  height: 250px;
+  /* border-radius: 10px; */
+  overflow: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 250px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 1s;
+}
+
+.slide img{
+  width: 250px;
+  height: 250px;
+}
+
+/*css for manual slide navigation*/
+
+
+
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: #40D3DC;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: #40D3DC;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: #40D3DC;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: #40D3DC;
+}
