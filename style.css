@@ -348,7 +348,7 @@ font-size: 30px;
   background: #40D3DC;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 760px) {
   .background{
     display: block;
     /* flex-direction: column; */
