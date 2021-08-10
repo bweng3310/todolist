@@ -9,7 +9,6 @@ document.querySelector('.add-button').addEventListener('click',
           '<span  class="box" style="width:280px"><input class="check" type="checkbox" name="box"><label class="label"">'+ input +'</label><button class="edit">edit</button></span><button class="delete">Delete</button>';
         document.querySelector('.inner').appendChild(div);
         $('.input').val('');
-
     })
 
 
@@ -17,45 +16,39 @@ document.querySelector('.add-button').addEventListener('click',
          $(e.target).parent().remove()
        })
 
+
     $('.clear').click(() => {
     $('.inner').empty();
      })
 
 
     $('.unfinished').on('click', function() {
-
       $("input:checkbox:checked").parent().parent().hide();
       $("input:checkbox:not(:checked)").parent().parent().show();
-
-      
-
     })
+
+
 
     $('.finished').on('click', function() {
-
       $("input:checkbox:checked").parent().parent().show();
-
       $("input:checkbox:not(:checked)").parent().parent().hide();
-
     })
+
+
 
     $('.active').on('click', function() {
-
       $("input:checkbox:checked").parent().parent().show();
-
       $("input:checkbox:not(:checked)").parent().parent().show();
-
     })
 
 
 
-  
     $('.inner').on('click', '.edit', function() {
       $('.editarea').removeClass("hide");
       $('.inputarea').addClass("hide");
       $(event.target).addClass("mark");
-      
     })
+
 
 
     $('.editbutton').on('click', function() {
@@ -64,10 +57,10 @@ document.querySelector('.add-button').addEventListener('click',
           $('.editinput').val('');
           $('.editarea').addClass("hide");
           $('.inputarea').removeClass("hide"); 
-          $('.edit').removeClass("mark");
-               
-      
+          $('.edit').removeClass("mark"); 
     })
+
+
 
     var counter = 1;
     setInterval(function(){
@@ -102,18 +95,13 @@ document.querySelector('.add-button').addEventListener('click',
               div.outerHTML = `
               <div class="`+ i +` wx hide">今天最高溫`+ weather.records.location[i].weatherElement[4].time[0].parameter.parameterName+`度，降雨機率`+ weather.records.location[i].weatherElement[1].time[0].parameter.parameterName+`%，天氣狀況`+ weather.records.location[i].weatherElement[0].time[0].parameter.parameterName+`</div>`
                  }
-                //  $('.location').on('click', function() {    
-                //   $('.wx').toggle();
-                //  })
+
                  $('.location').on('change', function() {    
                  let val=$('.location').val();
                  console.log(val);
                  $('.wx').addClass('hide');
                  $('.'+val).removeClass('hide');
                 })
-              
-              
-     
               }}
 
               
