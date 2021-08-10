@@ -270,6 +270,7 @@ padding-bottom: 30px;
 }
 .weathertitle{
 font-size: 30px;
+line-height: 30px;
 }
 .footer{
   text-align: center;
