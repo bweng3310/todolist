@@ -49,6 +49,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
+
 .background{
  display: flex;
 text-align: center;
@@ -348,10 +351,10 @@ font-size: 30px;
   background: #40D3DC;
 }
 
-@media all and (max-width: 700px) {
+@media all and (max-width: 800px) {
   .background{
-    display: block;
-    /* flex-direction: column; */
+    /* display: block; */
+    flex-direction: column;
    text-align: center;
    /* justify-content: center; */
    font-family: monospace;
@@ -450,5 +453,52 @@ font-size: 30px;
 .todolist{
   width: 85vw;
 }
+.all{
+  background-color: white;
+  width: 80vw;
+  height: 300px;
+  border-radius: 10px;
+  display: inline-block;
+  position: relative;
+  }
+  .active{
+    color: black;
+    background-color:#D3D3D3;
+    width: 15%;
+    height: 30px;
+    border: none;
+    font-family: monospace;
+    border-radius: 3px;
+    margin-top: 15px;
+    margin-left: 7px;
+    margin-right: 7px;
+    font-size: 15px;
+    }
+    .finished{
+    color: black;
+    width: 28%;
+    height: 30px;
+    background-color: #D3D3D3;
+    border: none;
+    font-family: monospace;
+    border-radius: 3px;
+    margin-top: 15px;
+    margin-left: 7px;
+    margin-right: 7px;
+    font-size: 15px;
+    }
+    .unfinished{
+    color: black;
+    width: 33%;
+    height: 30px;
+    background-color: #D3D3D3;
+    border: none;
+    font-family: monospace;
+    border-radius: 3px;
+    margin-top: 15px;
+    margin-left: 7px;
+    margin-right: 7px;
+    font-size: 15px;
+    }
   
 }
