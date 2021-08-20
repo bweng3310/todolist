@@ -60,11 +60,11 @@ table {
   background-color: #F5F5DC;
 }
 
-input[type=checkbox]:checked ~ label{
+.label{
   text-decoration:line-through;
   color:gray;
-  
 }
+
 .inputframe{
   position: relative;
   justify-content: center;
